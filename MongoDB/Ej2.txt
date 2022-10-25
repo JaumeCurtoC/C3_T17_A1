@@ -1,0 +1,5 @@
+use empresa;
+db.createCollection('Departamentos');
+db.createCollection('Empleados');
+db.Departamentos.insertMany([{codigo:1,nombre:'Departamento1',presupuesto:10000},{codigo:2,nombre:'Departamento2',presupuesto:20000},{codigo:3,nombre:'Departamento3',presupuesto:25000},{codigo:4,nombre:'Departamento4',presupuesto:5000},{codigo:5,nombre:'Departamento5',presupuesto:15000}]);
+db.Empleados.insertMany([{DNI:'11112222',nombre:'Empleado1',apellidos:'Apellidos1',departamento:'63567964cd8215bb255cddd0'},{DNI:'33334444',nombre:'Empleado2',apellidos:'Apellidos2',departamento:'63567964cd8215bb255cddd1'},{DNI:'55556666',nombre:'Empleado3',apellidos:'Apellidos3',departamento:'63567964cd8215bb255cddd2'},{DNI:'77778888',nombre:'Empleado4',apellidos:'Apellidos4',departamento:'63567964cd8215bb255cddd1'},{DNI:'99990000',nombre:'Empleado5',apellidos:'Apellidos5',departamento:'63567964cd8215bb255cddd3'}]);

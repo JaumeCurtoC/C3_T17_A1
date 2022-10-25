@@ -1,0 +1,9 @@
+use investigacion;
+db.createCollection('Facultad');
+db.createCollection('Investigadores');
+db.createCollection('Equipos');
+db.createCollection('Reserva');
+db.Facultad.insertMany([{codigo:1,nombre:'nom1'},{codigo:2,nombre:'nom2'},{codigo:3,nombre:'nom3'},{codigo:4,nombre:'nom4'},{codigo:5,nombre:'nom5'}]);
+db.Investigadores.insertMany([{DNI:'11112222',nomApels:'nom1',facultad:'63569739cd8215bb255cde1b'},{DNI:'33334444',nomApels:'nom2',facultad:'63569739cd8215bb255cde1c'},{DNI:'55556666',nomApels:'nom3',facultad:'63569739cd8215bb255cde1d'},{DNI:'77778888',nomApels:'nom4',facultad:'63569739cd8215bb255cde1e'},{DNI:'99990000',nomApels:'nom5',facultad:'63569739cd8215bb255cde1f'}]);
+db.Equipos.insertMany([{numSerie:'ns01',nombre:'equipo1',facultad:'63569739cd8215bb255cde1b'},{numSerie:'ns02',nombre:'equipo2',facultad:'63569739cd8215bb255cde1c'},{numSerie:'ns03',nombre:'equipo3',facultad:'63569739cd8215bb255cde1d'},{numSerie:'ns04',nombre:'equipo4',facultad:'63569739cd8215bb255cde1e'},{numSerie:'ns05',nombre:'equipo5',facultad:'63569739cd8215bb255cde1f'}]);
+db.Reserva.insertMany([{investigador:'63569a3acd8215bb255cde20',equipo:'63569a61cd8215bb255cde25',comienzo:'2020-06-01', fin:'2021-06-01'},{investigador:'63569a3acd8215bb255cde21',equipo:'63569a61cd8215bb255cde26',comienzo:'2020-07-01', fin:'2021-07-01'},{investigador:'63569a3acd8215bb255cde22',equipo:'63569a61cd8215bb255cde27',comienzo:'2020-08-01', fin:'2021-08-01'},{investigador:'63569a3acd8215bb255cde23',equipo:'63569a61cd8215bb255cde28',comienzo:'2020-09-01', fin:'2021-09-01'},{investigador:'63569a3acd8215bb255cde24',equipo:'63569a61cd8215bb255cde29',comienzo:'2020-10-01', fin:'2021-10-01'}]);

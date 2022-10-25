@@ -1,0 +1,5 @@
+use cine;
+db.createCollection('Peliculas');
+db.createCollection('Salas');
+db.Peliculas.insertMany([{codigo:1,nombre:'Pelicula1',calificacionEdad:3},{codigo:2,nombre:'Pelicula2',calificacionEdad:7},{codigo:3,nombre:'Pelicula3',calificacionEdad:13},{codigo:4,nombre:'Pelicula4',calificacionEdad:16},{codigo:5,nombre:'Pelicula5',calificacionEdad:18}]);
+db.Salas.insertMany([{codigo:1,nombre:'Sala1',pelicula:'63568a7ccd8215bb255cdde4'},{codigo:2,nombre:'Sala1',pelicula:'63568a7ccd8215bb255cdde5'},{codigo:3,nombre:'Sala1',pelicula:'63568a7ccd8215bb255cdde6'},{codigo:4,nombre:'Sala1',pelicula:'63568a7ccd8215bb255cdde5'},{codigo:5,nombre:'Sala1',pelicula:'63568a7ccd8215bb255cdde7'}]);

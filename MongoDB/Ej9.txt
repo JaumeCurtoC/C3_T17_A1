@@ -1,0 +1,7 @@
+use ciencia;
+db.createCollection('Cientificos');
+db.createCollection('Proyecto');
+db.createCollection('Asignado_A');
+db.Cientificos.insertMany([{DNI:'11112222',nomApels:'nom1'},{DNI:'33334444',nomApels:'nom2'},{DNI:'55556666',nomApels:'nom3'},{DNI:'77778888',nomApels:'nom4'},{DNI:'99990000',nomApels:'nom5'}]);
+db.Proyecto.insertMany([{id:'id01',nombre:'proyecto1',horas:24},{id:'id02',nombre:'proyecto2',horas:16},{id:'id03',nombre:'proyecto3',horas:48},{id:'id04',nombre:'proyecto4',horas:72},{id:'id05',nombre:'proyecto5',horas:50}]);
+db.Asignado_A.insertMany([{cientifico:'63569e5dcd8215bb255cde2f',proyecto:'63569e86cd8215bb255cde34'},{cientifico:'63569e5dcd8215bb255cde30',proyecto:'63569e86cd8215bb255cde35'},{cientifico:'63569e5dcd8215bb255cde31',proyecto:'63569e86cd8215bb255cde36'},{cientifico:'63569e5dcd8215bb255cde32',proyecto:'63569e86cd8215bb255cde37'},{cientifico:'63569e5dcd8215bb255cde33',proyecto:'63569e86cd8215bb255cde38'}]);

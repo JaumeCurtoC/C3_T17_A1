@@ -1,0 +1,9 @@
+use almacenamiento;
+db.createCollection('Cajeros');
+db.createCollection('Productos');
+db.createCollection('Maquinas_Registradoras');
+db.createCollection('Venta');
+db.Cajeros.insertMany([{codigo:1,nomApels:'nom1'},{codigo:2,nomApels:'nom2'},{codigo:3,nomApels:'nom3'},{codigo:4,nomApels:'nom4'},{codigo:5,nomApels:'nom5'}]);
+db.Productos.insertMany([{codigo:1,nombre:'nom1',precio:5},{codigo:2,nombre:'nom2',precio:10},{codigo:3,nombre:'nom3',precio:15},{codigo:4,nombre:'nom4',precio:20},{codigo:5,nombre:'nom5',precio:25}]);
+db.Maquinas_Registradoras.insertMany([{codigo:1,piso:0},{codigo:2,piso:1},{codigo:3,piso:1},{codigo:4,piso:2},{codigo:5,piso:2}]);
+db.Venta.insertMany([{cajero:'635693ffcd8215bb255cde07',maquina:'63569450cd8215bb255cde11',producto:'63569428cd8215bb255cde0c'},{cajero:'635693ffcd8215bb255cde08',maquina:'63569450cd8215bb255cde12',producto:'63569428cd8215bb255cde0d'},{cajero:'635693ffcd8215bb255cde09',maquina:'63569450cd8215bb255cde13',producto:'63569428cd8215bb255cde0e'},{cajero:'635693ffcd8215bb255cde0a',maquina:'63569450cd8215bb255cde14',producto:'63569428cd8215bb255cde0f'},{cajero:'635693ffcd8215bb255cde0b',maquina:'63569450cd8215bb255cde15',producto:'63569428cd8215bb255cde10'}]);

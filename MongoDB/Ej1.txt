@@ -1,0 +1,5 @@
+use informatica;
+db.createCollection('Fabricantes');
+db.createCollection('Articulos');
+db.Fabricantes.insertMany([{codigo:1,nombre:'Fabricante1'},{codigo:2,nombre:'Fabricante2'},{codigo:3,nombre:'Fabricante3'},{codigo:4,nombre:'Fabricante4'},{codigo:5,nombre:'Fabricante5'}]);
+db.Articulos.insertMany([{codigo:1,nombre:'Articulo1',precio:10,fabricante:'63565219cd8215bb255cdd94'},{codigo:2,nombre:'Articulo2',precio:20,fabricante:'635671efcd8215bb255cddc7'},{codigo:3,nombre:'Articulo3',precio:15,fabricante:'635671efcd8215bb255cddc8'},{codigo:4,nombre:'Articulo4',precio:30,fabricante:'635671efcd8215bb255cddc7'},{codigo:5,nombre:'Articulo5',precio:50,fabricante:'635671efcd8215bb255cddc9'}]);

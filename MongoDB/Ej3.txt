@@ -1,0 +1,5 @@
+use almacenes;
+db.createCollection('Almacenes');
+db.createCollection('Cajas');
+db.Almacenes.insertMany([{codigo:1,lugar:'Lugar1',capacidad:10},{codigo:2,lugar:'Lugar2',capacidad:15},{codigo:3,lugar:'Lugar3',capacidad:20},{codigo:4,lugar:'Lugar4',capacidad:25},{codigo:5,lugar:'Lugar5',capacidad:30}]);
+db.Cajas.insertMany([{numReferencia:'NR111',contenido:'Contenido1',valor:10,almacen:'63567ae2cd8215bb255cddda'},{numReferencia:'NR222',contenido:'Contenido2',valor:20,almacen:'63567ae2cd8215bb255cdddb'},{numReferencia:'NR333',contenido:'Contenido3',valor:15,almacen:'63567ae2cd8215bb255cdddc'},{numReferencia:'NR444',contenido:'Contenido4',valor:25,almacen:'63567ae2cd8215bb255cdddb'},{numReferencia:'NR555',contenido:'Contenido5',valor:20,almacen:'63567ae2cd8215bb255cdddd'}]);

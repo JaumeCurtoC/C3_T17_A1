@@ -1,0 +1,5 @@
+use directiva;
+db.createCollection('Despachos');
+db.createCollection('Directores');
+db.Despachos.insertMany([{numero:1,capacidad:3},{numero:2,capacidad:5},{numero:3,capacidad:7},{numero:4,capacidad:9},{numero:5,capacidad:4}]);
+db.Directores.insertMany([{DNI:'11112222',nomApels:'nom1',despacho:'63568e3bcd8215bb255cddee'},{DNI:'33334444',nomApels:'nom2',DNIJefe:'11112222',despacho:'63568e3bcd8215bb255cddef'},{DNI:'55556666',nomApels:'nom3',DNIJefe:'33334444',despacho:'63568e3bcd8215bb255cddf1'},{DNI:'77778888',nomApels:'nom4',DNIJefe:'33334444',despacho:'63568e3bcd8215bb255cddf1'},{DNI:'99990000',nomApels:'nom5',despacho:'63568e3bcd8215bb255cddf0'}]);
